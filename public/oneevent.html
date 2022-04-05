@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TOURNAMENT</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <!--         <script>document.getElementsByTagName("html")[0].className += " js";</script>
+          <link rel="stylesheet" href="assets/css/style.css">-->
+
+
+        <link rel="icon" href="1234.ico" style="width:.5rem;height: .5rem;">
+        <link rel="stylesheet" href="oneevent.css">
+
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+        <!-- Bootstrap CSS -->
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!--fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+       <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+       
+       
+
+
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-database.js"></script>
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167292050-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-167292050-2');
+</script>
+<!-- Analytics Tag Ends Here -->
+</head>
+    <body style="padding: 0">
+
+        <section id="title">
+
+             <nav class="navbar  navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="main.html"><img  class="logo" src='3.2.png' ></a>
+				<a class="nav-link-download" target="_blank" href="https://drive.google.com/drive/u/0/folders/1M0AMw0miQ7cjKwesSwuKCGR9CrCMHK_9" style="color: white"><button type="button" class="btn-download btn-outline-light-download"><span>DOWNLOAD APP</span></button></a>
+                <button style="border-color: white" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                       
+
+                        <li  class="nav-item"><a class="nav-link" style="color: white">SUPPORT</a></li>
+                        <li class="nav-item">
+                          <!-- <button type="button" id="btnlog" class="btn btn-outline-light"><span>LOG OUT</span></button> -->
+                         
+                            
+                            <!-- Use any element to open the sidenav -->
+                            <a class="nav-link" style="color: white"> <span onclick="openNav()" style="color: white;">PROFILE</span></a>
+                             
+                            <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+                            <!-- <div id="main">
+                              ...
+                            </div> -->
+                      </li>
+
+
+                    </ul>
+                </div>
+            </nav>
+        </section>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#" style="text-decoration: none;"> <img src="123.png" alt="Avatar" class="avatar"></a>
+            <a href="#"  style="text-decoration: none;" id="lol12"></a>
+
+            <a href="#"  style="text-decoration: none;font-weight: none;font-size: 16px;"><div id="useridmail"></div></a>
+            <a href="edit.html"  style="text-decoration: none;">EDIT PROFILE</a>
+            <a href="#"  style="text-decoration: none;">ORDERS</a>
+            <a href="#"  style="text-decoration: none;">
+                <button type="button" id="btnlog" class="btn btn-outline-light" style="margin-left: 0;"><span>LOG OUT</span></button>
+
+            </a>
+          
+          </div>
+          <section>
+            <div class="containerBox">
+                <div class="text-box">
+                    <div id="color-overlay">
+                        <div>
+                           <p class="color-overlay-heading"> LUDO </p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <img class="maintheme img" src="assests/images/compressed/LUDO 1.jpg">
+            </div>
+        </section>
+
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="feature col-lg-5 jk" style="padding-top:1rem;">
+
+                    <div class="background">
+                        <div class="transbox" style="opacity: 1;">
+                            <p id="w12" style="font-size: 1.5rem;font-family: 'Open Sans', sans-serif;"></p>
+                             
+                        </div>
+                        
+                        
+                      
+                        
+                        
+                        
+                        
+                        
+                        <form action="index.php" class="form-align" method="post" name="lolp">
+                            
+<input type="hidden" name="orderid" value="something">
+<input type="hidden" name="amount" value="" id="bingonew" >
+<input type="hidden" name="name" value="" id="bingonew1">
+<input type="hidden" name="email" value="" id="bingonew2">
+<input type="hidden" name="phoneno" value="" id="bingonew3">
+<input type="hidden" name="amountinfo" value="" id="bingonew12">
+<input type="hidden" name="orderpin" value="" id="bingonew13">
+
+
+<!-- new file -->
+<input type="hidden" name="orderpin098" value="pubg" id="bingonew13098">
+
+
+
+
+
+
+
+
+                        <button type="button" class="btn btn-success" style="    width: 90%;font-family: 'Open Sans', sans-serif;"  disabled="true" id="mybtn22">PAY NOW</button>
+
+                   
+                        <!-- <button type="button" class="btn btn-warning" disabled="false" id="mybtn221" style="display: none;">PAY NOW</button> -->
+                        
+
+<select name="cars" class="form-control" id="player" style="width:90%;margin-top:1rem;display:inline;padding:0;color:white;border-width: 2px;border-color:darkgreen;background-color:black;font-family: 'Open Sans', sans-serif;">
+<option  value="solo" style="color: white;"> <p class="text-center"> ONE PASS</p> </option>
+
+
+</select>
+
+<br>
+<input type="hidden" name="orderpub" value="" id="bingonew4">
+
+<input type="text" name="orderpin123x" value="" id="bingonew1367" style="margin-top: 1rem;display: inline;width: 90%;" class="form-control" placeholder="Referral code">
+<div id="ght" style="display: none;margin-top: 1rem;"><p style="color: red; font-weight:bold; font-family: 'Open Sans', sans-serif;">
+    Click here to complete your profle to pay</p>
+    <a href="edit.html" style="text-decoration: none;display: block;"> 
+        <button type="button" class="btn btn-outline-danger">Edit Profile</button>
+    </a>
+</div>
+
+                    </form>
+<div id="rthl" style="display: inline;"></div>
+                    
+                       
+                    </div>
+
+
+
+
+
+
+
+
+
+                   
+                
+                
+                </div>
+                <div class="feature col-lg-2"></div>
+                <div class="feature col-lg-4 event-details" style="font-family: 'Open Sans', sans-serif;">
+                    
+                    <div>
+                        <h4 style="color: black;font-family: 'Open Sans', sans-serif;" id="bingo"></h4>
+                        <div>
+                            <span class="company" id="bingo1"></span></div><div style="color: black;font-family: 'Open Sans', sans-serif; font-size: 1rem;" id="bingo2"></div>
+                        <div style="color: black" id="bingo3"></div>
+                        <div >
+                              <a href="" rel="nofollow" target="_blank" itemprop="sameAs" id="bingo4" style="text-decoration: none"> 
+                            <button type="button" class="btn btn-success" style="margin: .7rem;background-color: purple;border-color: purple;"><img src="https://img.icons8.com/plasticine/100/000000/discord-logo.png" style="width: 2rem;height: 2rem;">
+                            DISCORD<span style="color:purple;">..</span>  
+                            </button>
+                           </a>
+                             <a href="" rel="nofollow" target="_blank" itemprop="sameAs" id="bingo77">  <button type="button" class="btn btn-primary" style="margin: .7rem;"><img src="https://img.icons8.com/plasticine/100/000000/telegram-app.png" style="width: 2rem;height: 2rem;">
+                             TELEGRAM </button>
+                            </a>
+                        </div>
+                    </div>
+                 
+                    <!-- <img src="https://img.icons8.com/nolan/64/discord-logo.png"/> -->
+                </div>
+            </div></div>
+        <section class="header1">
+            <div class="container-fluid">
+                <div class="row" style="font-family: 'Open Sans', sans-serif; display: flex;justify-content: space-between;">
+                    <div class="feature col-lg-5">
+                        <div class="title2 text-center" style="font-size: 25px;">RULES</div>
+                        <div class="text breakable">
+                            <div style=" margin-top: 1rem;">
+                                <p  style="font-family: 'Open Sans', sans-serif; color:black;">1. Colors will be assigned by the organisers only<br>
+2. No spamming with in game messages would be allowed<br>
+3. No mods or cheats will be allowed, if seen using them, the player will be disqualified immediately without any refund<br>
+4. A 15% cancellation fee will be charged, in the event of cancellation of game<br>
+5. Prize to the winner will be awarded within 24 hours of successful conduction of event and within 72 hours of the same to runner ups
+<br>6. No teaming of multiple players would be allowed
+7.Once registered you cannot cancel you registration</p>
+                            </div>  
+
+                            <div style=" margin-top: 1rem;">
+                                <h6 class="text-center">**GOOD LUCK!**</h6>
+                            </div>
+
+
+
+                        </div>
+          
+                            <div class="title2  text-center"  style="font-size: 25px; margin-top: 2rem;">STRUCTURE</div>
+                            <div class="size-content"><div class="text breakable" id="rost">
+                               
+                                <hr></div></div>
+                      
+
+                    </div>
+                    <div class="feature col-lg-5">
+                        <div class="title2 text-center"  style="font-size: 25px;">PRIZE</div>
+                        <div class="size-content text-center"><div class="text breakable" id="bingo6">
+                               
+                                <hr></div></div>
+                        <div class="title2 text-center"  style="font-size: 25px;" >Timezone</div><div class="text-center" id="bingo5">
+                            <hr>
+                        </div>
+
+
+                    </div></div>
+                <div class="row">
+                    <div class="feature col-lg-6">
+                        
+                        </div>
+                </div></div>
+        </section>
+
+
+
+<section id="contact">
+          <a name="targetname1"></a>
+          <div>
+              <div class="bottom">
+                  <center>
+                      <div class="row" >
+                          <div class="feature col-lg-4">
+<p class="h">CUSTOMER SERVICE</p> <br>
+<a  href="terms2.html"  class="terms">TERMS OF SERVICE </a></li><br>
+                          <a  href="privacy2.html" class="terms">PRIVACY POLICY</a></li>
+                          <br>
+                          <a  href="service2.html" class="terms">SERVICE LEVEL AGREEMENT</a> </li><br>
+                          <a  href="https://campus-ambassador-program.web.app/" class="terms">CAMPUS AMBASSADOR</a> </li>
+                        <br>  <a  href="#" class="terms">PARTNER WITH US</a> </li>
+
+
+                          </div>
+                          <div class="feature col-lg-4" style="margin-bottom:-2rem;">
+                              <img  src="3.2.png" alt="" class="footerlogo">
+                              <p class="h">Partnership Inquiry:<a href="mailto:enquiry@myknot.live" style="text-decoration: none ; color:#17a2b8">Enquiry@myknot.live</a></p><br>
+            
+
+
+                          </div>
+                          <div class="feature col-lg-4 soc-icons" style="padding-top:1rem;">
+                         <a  href="https://www.instagram.com/myknot_gaming/?r=nametag" target="_blank">    <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" class="image-hover" style="display: inline;height:40px;width:40px;"></a>
+                         <a  href="https://www.facebook.com/myknotgaming/" target="_blank">   <img src="https://img.icons8.com/fluent/48/000000/facebook-new.png" class="image-hover" style="display: inline;height:40px;width:40px;"></a> 
+                         <a  href="https://t.me/myknot_Gaming_Event" target="_blank">       <img src="https://img.icons8.com/fluent/48/000000/telegram-app.png" class="image-hover" style="display: inline;height:40px;width:40px;"></a>
+
+                        <a   href="#" target="_blank">    <img src="https://img.icons8.com/fluent/48/000000/discord-new-logo.png" class="image-hover" style="display: inline;height:40px;width:40px;"></a> 
+                          </div></div> </center> <center>
+                          <div>
+                      <p class="g" style="padding-top:1rem;margin-bottom:-1rem;">COPYRIGHT &copy;2019 MYKNOT CORPORATION.<br> ALL RIGHTS RESERVED.<br>
+                          MYKNOT's BATTLE ROYALE REGISTERED TRADEMARKS, TRADEMARKS OR SERVICES MARKS OF MYKNOT CORPORATION</p><br><hl>
+                          <!-- <p class="h">Partnership Inquiry:&copy;<a href="mailto:enquiry@myknot.live" style="text-decoration: none ;">Enquiry@myknot.live</a></p><br> -->
+                      </div>
+                  </center>
+                          
+                       
+                         
+
+                          </div>
+                          </div>
+                          </section>
+                            <style>
+                                  .navbar-brand {
+                                                    display: inline-block;
+                                                    padding-top: .0rem; 
+                                                    padding-bottom: .0rem; 
+                                                    margin-right: 1rem;
+                                                    font-size: 1.25rem;
+                                                    line-height: inherit;
+                                                    white-space: nowrap;
+                                                }
+                            </style>
+
+                        
+
+
+                         <script src="oneevent.js"></script> 
+
+
+</body></html>

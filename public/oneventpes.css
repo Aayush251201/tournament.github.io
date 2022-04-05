@@ -1,0 +1,338 @@
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16 May, 2020, 2:02:37 AM
+    Author     : asifu
+*/
+
+#title{background-color:black;text-align: center;}
+.maintheme{width: 100%;}
+.logo{
+  width: 8rem;
+  height: 4rem;
+  margin-left: 0%;
+}
+.slash{font-size:1.2rem;}
+.login{position: relative;}
+.btn-outline-light{margin-left:1rem;margin-bottom: 1rem;margin-right: 1rem;}
+
+
+
+
+.nav-link{
+	margin-top:-0.25rem;
+	margin-right:.25rem ;
+	margin-left:.25rem;
+	margin-bottom:0rem;
+	font-weight:bold;
+	font-size: 1.3rem;
+	
+}
+
+.nav-link:hover{background-color:graytext;border-radius:5px;}
+.containerBox {
+    position: relative;
+    display: inline-block;
+}
+.text-box {
+    position: absolute;    
+    height: 100%;
+    text-align: left;    padding-left: 3%;
+    width: 100%;
+}
+.text-box:before {
+   content: '';
+   display: inline-block;
+   height: 100%;
+   vertical-align: middle;
+}
+p {
+   display: inline-block;
+   /*or whatever you want*/
+   color: #FFF;   
+   font-family: 'Oswald', sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.terms{text-decoration: none;color: white;font-size: .9rem;}
+.terms:hover{text-decoration: none;color: #D3D3D3;opacity: .5}
+.dash{color: #D3D3D3}
+
+
+.g{font-family: 'Comic Neue', cursive;
+font-family: 'Lexend Giga', sans-serif;color: white;font-size: .8rem;}
+.h{font-family: 'Fira Sans', sans-serif;
+font-weight: bolder;
+  color: goldenrod;}
+  
+#contact{background-color: black;    padding: 1% 5%;}
+.l:hover{opacity: 0.3;}
+.i:hover{opacity: .3;}
+.j:hover{opacity: .3;}
+.k:hover{opacity: .3;}
+.m:hover{opacity: .3;}
+
+.footerlogo{ height: 80px;margin-top: 1%}
+.title2{font-size: 2rem;font-weight: bold;}
+.header1{padding: 2%}
+#mainsection{background-image: url("assests/WEBPAGE\ 3.png");
+/*background-repeat:no-repeat;
+
+   background-size:cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;*/
+
+
+position: relative;
+    height: 35rem;
+    background-repeat:no-repeat;
+    background-size:100% 100vh;
+}
+
+
+h1{color: white;font-weight: 400;font-size: 9rem;}
+
+
+.jk{text-align:center;padding-top: 5rem;}
+
+#color-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height:100%;
+   background-color: black;
+   opacity: 0.6;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.color-overlay-heading{
+  font-size: 5rem;
+  opacity: 1;
+  color: white;
+}
+@media screen and (max-width: 550px){
+
+  .color-overlay-heading{
+    font-size: 2rem;
+    opacity: 1;
+    color: white;
+  }
+}
+
+.form-align{
+  margin-top: 2rem;
+}
+.company{color: goldenrod}
+
+div.background {margin-top: 0rem;margin-bottom: .3rem;
+/*  background: url(klematis.jpg) repeat;*/
+/*  border: 2px solid black;*/
+}
+.background{text-align: center}
+div.transbox {
+   
+  margin: 30px;
+  background-color: #ffffff;
+  background-color: #5cb85c;
+  opacity: 1;
+  margin: 10px;
+  /* border: 3px solid black; */
+  box-shadow: 0px 0px 9px black;
+  border-radius: 100em;
+  /*border: 1px solid black;*/
+  
+  opacity: 0.2;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #fffffff0;
+}
+
+
+
+
+.sidenav {
+   height: 100%; /* 100% Full-height */
+   width: 0; /* 0 width - change this with JavaScript */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Stay on top */
+   top: 0; /* Stay at the top */
+   left: 0;
+   background-color: #111; /* Black*/
+   overflow-x: hidden; /* Disable horizontal scroll */
+   padding-top: 60px; /* Place content 60px from the top */
+   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+ }
+ 
+ /* The navigation menu links */
+ .sidenav a {
+   padding: 8px 8px 8px 32px;
+   text-decoration: none;
+   font-size: 25px;
+   color: #818181;
+   display: block;
+   transition: 0.3s;
+ }
+ 
+ /* When you mouse over the navigation links, change their color */
+ .sidenav a:hover {
+   color: #f1f1f1;
+ }
+ 
+ /* Position and style the close button (top right corner) */
+ .sidenav .closebtn {
+   position: absolute;
+   top: 0;
+   right: 25px;
+   font-size: 36px;
+   margin-left: 50px;
+ }
+ 
+ /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+ #main {
+   transition: margin-left .5s;
+   padding: 20px;
+ }
+ 
+ /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+ @media screen and (max-height: 450px) {
+   .sidenav {padding-top: 15px;}
+   .sidenav a {font-size: 18px;}
+ }
+
+ .avatar {
+   vertical-align: middle;
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+ }
+
+ .event-details{
+  background-color: #e7eff9;
+  background-image: linear-gradient(315deg, #e7eff9 0%, #cfd6e6 74%);
+   text-align:center;
+   padding-top: .5rem;
+   display: inline-table;
+   box-shadow: 0px 0px 6px black;
+   margin: 1rem;
+  }
+
+
+
+.image-hover {
+	
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.image-hover:hover, .image-hover:focus, .image-hover:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.btn-outline-light-download{
+	
+    margin-left: 0rem; 
+    margin-bottom: 0rem;
+    margin-right: 0rem; 
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+.btn-download {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid #f8f9fa;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+
+.btn-download:hover{
+    background-color: white;
+    color: black;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+@media only screen and (max-width: 380px){
+	
+    .btn-download {
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-color: transparent;
+        border: 1px solid #f8f9fa;
+        padding: .375rem .75rem;
+        font-size: 0.7rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+    }
+}
+
+@media only screen and (max-width: 325px){
+	
+    .btn-download {
+		
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-color: transparent;
+        border: 1px solid #f8f9fa;
+        padding: .375rem .75rem;
+        font-size: 0.4rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+    }
+}
+
+@media screen and (max-width: 550px){
+
+       .navbar-nav .nav-link {
+             padding-right: 40px;
+             padding-left: 40px;
+             margin-bottom: 10px;
+             margin-top: 8px;
+       }
+}

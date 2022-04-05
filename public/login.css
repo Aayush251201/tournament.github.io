@@ -1,0 +1,240 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10 May, 2020, 12:19:56 PM
+    Author     : asifu
+*/
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10 May, 2020, 12:24:55 AM
+    Author     : asifu
+*/
+.klmn{color: red;}
+#title{background-color:black;text-align: center;}
+
+.maintheme{
+    width: 100%;height:32rem;margin-bottom: 3%;
+    margin-left: 2rem;
+}
+@media screen and (max-width: 950px) {
+    .maintheme{
+      height: 17rem;
+      margin-bottom: 3%;
+      margin-left: 0rem;
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    .maintheme{
+        height: 17rem;
+        margin-bottom: 3%;
+        margin-left: 0rem;
+      }
+
+  }
+.logo{
+    width: 8rem;
+    height: 4rem;
+    margin-left: 0%;
+}
+.slash{font-size:1.2rem;}
+.login{position: relative;
+    font-family: 'Pacifico', cursive;}
+.btn-outline-light{margin-left:1rem;margin-bottom: 1rem;margin-right: 1rem;}
+.nav-link{
+	margin-top:-0.25rem;
+	margin-right:.25rem ;
+	margin-left:.25rem;
+	margin-bottom:0rem;
+	font-weight:bold;
+	font-size: 1.3rem;
+	
+}
+
+.nav-link:hover{background-color:graytext;border-radius:5px;}
+
+.anchor-label{
+    font-family: 'Cairo', sans-serif;
+    font-weight: b;
+}
+
+
+.g{font-family: 'Comic Neue', cursive;
+font-family: 'Lexend Giga', sans-serif;color: white;font-size: .6rem;margin-bottom: 0}
+.h{font-family: 'Fira Sans', sans-serif;
+    color: goldenrod;
+    font-weight: bolder;
+    margin: 0;
+}
+#contact{background-color: black;padding: 1% 3%;}
+.l:hover{opacity: 0.3;}
+.i:hover{opacity: .3;}
+.j:hover{opacity: .3;}
+.k:hover{opacity: .3;}
+.m:hover{opacity: .3;}
+
+.footerlogo{height: 80px;}
+.terms{text-decoration: none;color: white;font-size: .9rem;
+    font-family: 'Cairo', sans-serif;}
+.terms:hover{text-decoration: none;color: gray;}
+.dash{color: gray}
+
+
+.login-box{
+    background-color: white;
+    border-radius: 3%;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 950px) {
+    .login-box{
+        background-color: white;
+        border-radius: 3%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+    }
+
+}
+
+.soc-icons{
+    margin-bottom: 2rem;
+}
+
+
+/*.containerBox {
+    position: relative;
+    display: inline-block;
+}
+.text-box {
+    position: absolute;    
+    height: 100%;
+    text-align: left;    padding-left: 3%;
+    width: 100%;
+}
+.text-box:before {
+   content: '';
+   display: inline-block;
+   height: 100%;
+   vertical-align: middle;
+}
+p {
+   display: inline-block;
+   or whatever you want
+   color: #FFF;   
+   font-family: 'Oswald', sans-serif;
+}
+abc {
+   display: inline-block;
+    or whatever you want
+   color: gray;
+   font-family: 'Oswald', sans-serif;
+   
+   
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}*/
+label{
+    font-family: 'Cairo', sans-serif;
+font-weight: bold;}
+h2{color: white;margin-left: 5%;font-size: 5rem;}
+
+
+
+.btn-outline-light-download{
+	
+    margin-left: 0rem; 
+    margin-bottom: 0rem;
+    margin-right: 0rem; 
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+.btn-download {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid #f8f9fa;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+
+.btn-download:hover{
+    background-color: white;
+    color: black;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+@media only screen and (max-width: 380px){
+	
+    .btn-download {
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-color: transparent;
+        border: 1px solid #f8f9fa;
+        padding: .375rem .75rem;
+        font-size: 0.7rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+    }
+}
+
+@media only screen and (max-width: 325px){
+	
+    .btn-download {
+		
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-color: transparent;
+        border: 1px solid #f8f9fa;
+        padding: .375rem .75rem;
+        font-size: 0.4rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+    }
+}
+
+@media screen and (max-width: 550px){
+
+         .navbar-nav .nav-link {
+                        padding-right: 40px;
+                        padding-left: 40px;
+                        margin-bottom: 10px;
+                        margin-top: 8px;
+          }
+}

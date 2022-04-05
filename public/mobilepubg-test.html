@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TOURNAMENT</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+         <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link rel="stylesheet" href="assets/css/style.css">
+        
+
+<link rel="icon" href="1234.ico" style="width:.5rem;height: .5rem;">
+        <link rel="stylesheet" href="mobilepubg.css">
+
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+        <!-- Bootstrap CSS -->
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!--fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600&display=swap" rel="stylesheet">
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+        <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+       
+       
+
+
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-database.js"></script>
+   
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167292050-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-167292050-2');
+</script>
+<!-- Analytics Tag Ends Here -->
+
+</head>
+    <body style="padding: 0">
+        
+       <section id="title">
+
+            <nav class="navbar  navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="main.html"><img  class="logo" src='3.2.png' ></a>
+				<a class="nav-link-download" target="_blank" href="https://drive.google.com/drive/u/0/folders/1M0AMw0miQ7cjKwesSwuKCGR9CrCMHK_9" style="color: white"><button type="button" class="btn-download btn-outline-light-download"><span>DOWNLOAD APP</span></button></a>
+                <button style="border-color: white" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                       
+
+                        <li  class="nav-item"><a class="nav-link" style="color: white">SUPPORT</a></li>
+                        <li class="nav-item">
+                          <!-- <button type="button" id="btnlog" class="btn btn-outline-light"><span>LOG OUT</span></button> -->
+                         
+                            
+                            <!-- Use any element to open the sidenav -->
+                            <a class="nav-link" style="color: white"> <span onclick="openNav()" style="color: white;">PROFILE</span></a>
+							 
+                            
+                            <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+                            <!-- <div id="main">
+                              ...
+                            </div> -->
+                      </li>
+
+
+                    </ul>
+                </div>
+            </nav>
+        </section> 
+
+
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#" style="text-decoration: none;"> <img src="123.png" alt="Avatar" class="avatar"></a>
+          <a href="#"  style="text-decoration: none;" id="lol12"></a>
+
+          <a href="#" style="text-decoration: none;font-weight: none;font-size: 16px;"><div id="useridmail"></div></a>
+          <a href="edit.html"  style="text-decoration: none;">EDIT PROFILE</a>
+          <a href="#"  style="text-decoration: none;">ORDERS</a>
+          <a href="#"  style="text-decoration: none;">
+              <button type="button" id="btnlog" class="btn btn-outline-light" style="margin-left: 0;"><span>LOG OUT</span></button>
+
+          </a>
+        
+        </div>
+         <section>
+            <div class="containerBox">
+                <div class="text-box">
+                    <p style="font-size:5vw;margin-top: 18vw;"><br></p>
+
+
+                </div>
+                <img class="maintheme img" src="assests/WEBPAGE 3.png">
+            </div>
+        </section>
+        
+        
+           </section>
+           
+                        <section id="listtour">
+                              <a name="targetname1"></a><div class="container-fluid">
+                          <div>
+                <div class="feature " style="font-family: 'Arimo', sans-serif;" >
+                    <p class="text-center" style="font-size: 2.5rem;padding-left: 3%;padding-top: 3%;color: black;font-family: 'Arimo', sans-serif;font-weight:bold;">TOURNAMENT <span class="why" style="font-size:2.5rem;font-family: 'Arimo', sans-serif;font-weight:bold;">PUBG</span></p>
+                </div>
+                </div>
+                                  <div class="feature col-lg-7"></div></div>
+                            
+                            
+                            <div class="cd-tabs cd-tabs--vertical container text-center max-width-md margin-top-xl margin-bottom-lg js-cd-tabs" style="width:100%">
+    <nav class="cd-tabs__navigation" >
+      <ul class="cd-tabs__list">
+        <li style="margin-right: 1.5rem;margin-left: .5rem;">
+          <a href="#tab-inbox1" class="cd-tabs__item cd-tabs__item--selected" style="width: 80px;height:60px;    text-decoration: none;">
+            <span style="font-size: 1.1rem;"> ONGOING </span>
+          </a>
+        </li>
+        <li style="margin-right: 1.5rem;margin-left: .5rem;">
+          <a href="#tab-inbox" class="cd-tabs__item" style="width: 100px;height:60px;    text-decoration: none;">
+            <span style="font-size: 1.1rem;"> MORNING </span>
+          </a>
+        </li>
+
+        <li style="margin-right: 1.5rem;margin-left: .5rem;">
+          <a href="#tab-new" class="cd-tabs__item" style="width: 110px;height:60px;    text-decoration: none;">
+            <span style="font-size: 1.1rem;"> AFTERNOON </span>
+          </a>
+        </li>
+
+        <li style="margin-right: 1.5rem;margin-left: .5rem;">
+          <a href="#tab-gallery" class="cd-tabs__item" style="width: 60px;height:60px;    text-decoration: none;">
+            <span style="font-size: 1.1rem;"> NIGHT </span>
+          </a>
+        </li>
+        <li style="margin-right: 1.5rem;margin-left: .5rem;">
+          <a href="#tab-store" class="cd-tabs__item" style="width: 100px;height:60px;    text-decoration: none;">
+            <span style="font-size: 1.1rem;"> UPCOMING </span>
+          </a>
+        </li>
+        
+
+       
+      </ul> <!-- cd-tabs__list -->
+    </nav>
+
+    <ul class="cd-tabs__panels">
+      <li id="tab-inbox1" class="cd-tabs__panel cd-tabs__panel--selected text-component"  style="color: white;font-family: 'Work Sans', sans-serif; font-weight: bold;">
+        <div id="qwg123" style="color: white;font-family: 'Work Sans', sans-serif; font-weight: bold;">
+                                                    
+                                                </div>
+                                                <div id="qwg1231" style="color: white">
+                                                    
+                                                </div>
+                                                <div id="qwg1232" style="color: white">
+                                                    
+                                                </div>
+              </li>
+      <li id="tab-inbox" class="cd-tabs__panel text-component">
+         <div id="qwe" style="color: white; font-family: 'Work Sans', sans-serif; font-weight: bold;">
+                                            
+                                        </div> 
+      </li>
+
+      <li id="tab-new" class="cd-tabs__panel text-component">
+          <div id="qwf" style="color: white; font-family: 'Work Sans', sans-serif; font-weight: bold;">
+                                            
+                                        </div>
+      </li>
+
+      <li id="tab-gallery" class="cd-tabs__panel text-component">
+<div id="qwg" style="color: white; font-family: 'Work Sans', sans-serif; font-weight: bold;">
+                                            
+                                        </div>
+      </li>
+
+
+      <li id="tab-store" class="cd-tabs__panel text-component">
+        <div id="qwg1" style="color: white; font-family: 'Work Sans', sans-serif; font-weight: bold;">
+                                                    
+                                                </div>
+              </li>
+
+      
+    </ul> <!-- cd-tabs__panels -->
+  </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <!--                            
+                                                        <nav>
+                                                            <div style="border: 0; 
+                                                                 border-top-left-radius: 0; 
+                                                                 border-top-right-radius: 0;background-color: white;" class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                                <a style="border: 0; 
+                                                                   border-top-left-radius: 0; 
+                                                                   border-top-right-radius: 0;font-weight:bold;font-size: 2rem;background-color: white;text-decoration: none;color: goldenrod;" class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">MORNING</a>
+                                                                <a style="border: 0; 
+                                                                   border-top-left-radius: 0; 
+                                                                   border-top-right-radius: 0;font-weight:bold;font-size: 2rem;background-color: white;text-decoration: none;color: goldenrod;" class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">AFTERNOON</a>
+                                                                <a style="border: 0; 
+                                                                   border-top-left-radius: 0; 
+                                                                   border-top-right-radius: 0;font-weight:bold;font-size: 2rem;background-color: white;text-decoration: none;color: goldenrod;" class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">NIGHT</a>
+                                                            </div>
+                                                        </nav>
+                                                        <div  class="tab-content" id="nav-tabContent">
+                                                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"><div class="container-fluid">
+                                                            <div id="qwe" style="color: white">
+                                                                        
+                                                                    </div>
+                                                                <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="feature col-lg-4">
+                                                                    <pre id="qwe" style="color: white"></pre>  
+                                                                    
+                                                                </div>
+                                                                <div  class="feature col-lg-4" >
+                                                                     <pre id="poi" style="color: white"></pre>
+                                                                    
+                                                                </div>
+                                                                <div  class="feature col-lg-4">
+                                                                    <pre id="poiu" style="color: white"></pre> 
+                                                                    
+                                                                </div>
+                                                                    
+                                                            </div></div>
+                                                                </div></div>
+                            
+                                                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"> <div class="container-fluid">
+                                                                    <div id="qwf" style="color: white">
+                                                                        
+                                                                    </div></div></div>
+                                                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"><div class="container-fluid"><div id="qwg" style="color: white">
+                                                                        </div>
+                                                                    </div></div>
+                                                        </div>-->
+
+                        </section>
+        
+        
+        
+        
+        
+        
+        
+        
+                        <section id="contact">
+                          <a name="targetname1"></a>
+                          <div>
+                              <div class="bottom">
+                                  <center>
+                                      <div class="row-footer" >
+                                          <div class="feature col-lg-4" style="">
+              <p class="h">CUSTOMER SERVICE</p><br>
+              <a  href="terms2.html"  class="terms">TERMS OF SERVICE </a></li><br>
+                                          <a  href="privacy2.html" class="terms">PRIVACY POLICY</a></li>
+                                          <br>
+                                          <a  href="service2.html" class="terms">SERVICE LEVEL AGREEMENT</a> </li><br>
+                                          <a  href="https://campus-ambassador-program.web.app/" class="terms">CAMPUS AMBASSADOR</a> </li>
+                                        <br>  <a  href="#" class="terms">PARTNER WITH US</a> </li>
+              
+              
+                                          </div>
+                                          <div class="feature col-lg-4">
+                                              <img  src="3.2.png" alt="" class="footerlogo">
+                                              <p class="h">Partnership Inquiry:<a href="mailto:enquiry@myknot.live" style="text-decoration: none ;">Enquiry@myknot.live</a></p><br>
+                            
+              
+              
+                                          </div>
+                                          <div class="feature col-lg-4" style="padding-top: 3%;">
+                                         <a  href="https://www.instagram.com/myknot_gaming/?r=nametag" target="_blank">    <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" class="image-hover" style="display: inline;height:40px;width:40px;"></a>
+                         <a  href="https://www.facebook.com/myknotgaming/" target="_blank">   <img src="https://img.icons8.com/fluent/48/000000/facebook-new.png" class="image-hover" style="display: inline;height:40px;width:40px;"></a> 
+                         <a  href="https://t.me/myknot_Gaming_Event" target="_blank">       <img src="https://img.icons8.com/fluent/48/000000/telegram-app.png" class="image-hover" style="display: inline;height:40px;width:40px;"></a>
+
+                        <a   href="#" target="_blank">    <img src="https://img.icons8.com/fluent/48/000000/discord-new-logo.png" class="image-hover" style="display: inline;height:40px;width:40px;"></a> 
+                                          </div></div> </center> <center>
+                                          <div>
+                                      <p class="g">COPYRIGHT &copy;2019 MYKNOT CORPORATION.<br> ALL RIGHTS RESERVED.<br>
+                                          MYKNOT's BATTLE ROYALE REGISTERED TRADEMARKS, TRADEMARKS OR SERVICES MARKS OF MYKNOT CORPORATION</p><br><hl>
+                                          <!-- <p class="h">Partnership Inquiry:&copy;<a href="mailto:enquiry@myknot.live" style="text-decoration: none ;">Enquiry@myknot.live</a></p><br> -->
+                                      </div>
+                                  </center>
+                                          
+                                       
+                                         
+              
+                                          </div>
+                                          </div>
+                                          </section>
+
+                                          <style>
+                                            .row-footer{
+                                              display: flex;
+                                              -ms-flex-wrap: wrap;
+                                              flex-wrap: wrap;
+                                              margin-right: 0px;
+                                              margin-left: 0px;
+                                            }
+                                          </Style>
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <script src="assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+<script src="assets/js/main.js"></script>
+        
+        
+        
+        <script src="mobilepubg-test.js"></script>
+        
+    </body></html>

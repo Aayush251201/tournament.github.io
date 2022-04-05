@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> TOURNAMENT</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="1234.ico" style="width:.5rem;height: .5rem;">
+
+        <link rel="stylesheet" href="admincod.css">
+        <script>document.getElementsByTagName("html")[0].className += " js";</script>
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+        <!-- Bootstrap CSS -->
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+       
+       
+
+
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-database.js"></script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167292050-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-167292050-2');
+</script>
+<!-- Analytics Tag Ends Here -->
+
+
+    </head>
+    <body style="padding: 0;">
+
+
+
+        <section id="title">
+
+            <nav class="navbar  navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="adminpanel.html"><img  class="logo" src='3.2.png' ></a>
+				<a class="nav-link-download" target="_blank" href="https://drive.google.com/drive/u/0/folders/1M0AMw0miQ7cjKwesSwuKCGR9CrCMHK_9" style="color: white"><button type="button" class="btn-download btn-outline-light-download"><span>DOWNLOAD APP</span></button></a>
+                <button style="border-color: white ;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        
+                        <li  class="nav-item"><a class="nav-link" style="color: white" href="#targetname12">SUPPORT</a></li>
+
+                        <li><button type="button" id="btnlog" class="btn btn-outline-light"><span>LOG OUT</span></button></li>
+                        
+                        </nav>
+                        </section>
+                        <section id="adminpanel">
+                            
+                            
+
+                            <div class="container" >
+  
+  <h1 style="color:black;">WELCOME TO ADMIN PANEL!!(COD)</h1><br><br>
+                           <center> <a href="adminpanelpubg.html"><button  style="margin:.2rem;" type="button" class="btn btn-warning">PUBG</button></a>
+
+                            <a href="adminpanel.html" ><button  style="margin:.2rem;" type="button" class="btn btn-warning">LUDO</button></a>
+                            <a href="adminfreefire.html"><button   style="margin:.2rem;" type="button" class="btn btn-warning">FREEFIRE</button></a>
+                            <a href="adminchess.html" ><button  style="margin:.2rem;" type="button" class="btn btn-warning">CHESS</button></a>
+                            <a href="admincod.html"> <button  style="margin:.2rem;"  type="button" class="btn btn-warning">COD</button></a>
+                            <a href="adminlite.html" ><button  style="margin:.2rem;" type="button" class="btn btn-warning">PUBGLITE</button></a>
+                            
+							
+							<a name="targetname"></a>
+  
+  </center>
+ 
+   <div class="title" style="padding-top:1rem;">ADD NEW EVENT</div>
+    <div class="content">
+      
+        <div class="user-details">
+		 <div class="input-box">
+		<label for="validationCustom03">EVENT SLOT TIMING</label>
+                                        <div class="input-group mb-3" >
+                                            <select class="custom-select" id="inputGroupSelect02" style="">
+                                                <option selected>Choose a time</option>
+                                                <option value="morning">MORNING</option>
+                                                <option value="afternoon">AFTERNOON</option>
+                                                <option value="night">NIGHT</option>
+                                                <option value="upcoming">UPCOMING</option>
+                                            </select>
+
+                                        </div>
+		</div>
+		
+		<div class="input-box">
+		<label for="validationCustom03" class="details">EVENT BANNER</label>
+                                        <textarea type="text" class="form-control" id="vali" placeholder="event description" required style="width:100%;height:3rem;border-radius:5px;border:1px solid #ccc;border-bottom-width: 2px;font-size:16px;padding-left:15px;color:#848484;padding-top:0.5rem;"></textarea>
+										<div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+		 </div>
+		
+		<div class="input-box">
+		<label for="validationCustom02" class="details" style="">EVENT PLACE</label>
+                                        <input type="text" class="form-control" id="validationCustom02" placeholder="this event organised by" value="" required style="">
+										<div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+		
+		 </div>
+		 
+		 <div class="input-box">
+		 <label for="validationCustom02">EVENT ORGANIZER</label>
+                                        <input type="text" class="form-control" id="validationCustom021" placeholder="this event organised by" value="" required style="">
+										<div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+		 
+		  </div>
+		  
+		  <div class="input-box">
+		  <label for="validationCustom03" style="">REGISTRATION STATUS</label>
+                                        <div class="input-group mb-3" >
+                                            <select class="custom-select" id="inputGroupSelect0278" style="width:100%;height:3rem;border-radius:5px;border:1px solid #ccc;border-bottom-width: 2px;font-size:16px;padding-left:15px;color:#848484;padding-top:-0.6rem;">
+                                                <option selected>choose..</option>
+                                                <option value="open">open</option>
+                                                <option value="closed">closed</option>
+
+                                            </select>
+
+                                        </div>
+										<div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+		  </div>
+		  
+		 <div class="input-box"> </div>
+		 <div class="title" style="margin-top:2rem;">ADD MORE DETAILS</div>
+		 
+		  <div class="input-box"> </div>
+		  
+            <div class="input-box"> 
+		 
+					<label for="validationCustom03ab">PRIZE MONEY</label>
+                                        <textarea type="text" class="form-control" id="valiab" placeholder="1st prize
+2nd prize
+3rd prize
+specification" required style="width:100%;border-radius:5px;border:1px solid #ccc;border-bottom-width: 2px;font-size:16px;padding-left:15px;color:#848484;height:7rem;"></textarea>
+          
+		  <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+		  
+		  </div>
+		  
+		  <div class="input-box"> 
+		  <label for="validationCustom02a">TIME ZONE</label>
+                                        <input type="text" class="form-control" id="validationCustom021ab" placeholder="define the time zone" value="Asia/Kolkata (UTC+05:30)" required style="width:100%;color:#848484;">
+										<div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+		  </div>
+		  
+		    <div class="input-box">
+			<label for="validationCustom02" >ENTRY FEE</label>
+                                        <input  type="text" class="form-control" id="validationCustom021abc" placeholder="enter the amount" value="" required style="width:100%;">
+										<div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+			</div>
+      
+	          <div class="input-box">
+	         <label for="validationCustom02">PAYMENT URL(CASHFREE)</label>
+                                        <input  type="text" class="form-control" id="validationCustom021abctn8" placeholder="enter url" value="" required style="width:100%;">
+										<div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+	          </div>
+			  
+			  
+			  <div class="input-box">
+			<label for="validationCustom02">TELEGRAM URL</label>
+                                        <input  type="text" class="form-control" id="validationCustom021abctnn" placeholder="enter the url" value="" required style="width:100%;">
+										<div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+			</div>
+			
+			<div class="input-box">
+			<label for="validationCustom02" >EXCEL SHEET PIN</label>
+                                        <input type="text" class="form-control" id="validationCustom021abcl00asd" placeholder="" value="" required style="width:100%;">
+										<div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+			</div>
+			
+			<div class="input-box">
+			<label for="validationCustom02" >DISCORD URL</label>
+                                        <input type="text" class="form-control" id="validationCustom021abcl00" placeholder=" enter the url" value="" required style="width:100%;">
+										<div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+			</div>
+			
+			<div class="input-box">
+			<label for="validationCustom02">WHATSAPP URL</label>
+                                        <input type="text" class="form-control" id="validationCustom021abcl" placeholder=" enter the url" value="" required style="width:100%;">
+										<div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+	        </div>
+			
+			<h4 style="color: black;margin-top:3rem;font-size: 25px;font-weight: 500;position: relative;">DATE</h4>
+			
+			<div class="input-box">  </div>
+			
+			<div class="input-box">
+			
+
+                                        <label for="validationCustom02">FROM:</label>
+                                        <input type="text" class="form-control" id="validationCustom021abck" placeholder="DD/month/year" value="" required style="width:100%;">
+										<div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+	        </div>
+			
+			
+			
+			<div class="input-box">
+			<label for="validationCustom02">TO</label>
+                                        <input type="text" class="form-control" id="validationCustom021abct" placeholder="DD/month/year" value="" required style="width:100%;">
+										<div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+	        </div>
+			
+			<div class="input-box">
+			<label for="validationCustom03">GAME STRUCTURE</label>
+                                        <textarea type="text" class="form-control" id="validationCustom021abcty6" placeholder="event description" required style="width:100%;height:4rem;border-radius:5px;border:1px solid #ccc;border-bottom-width: 2px;font-size:16px;padding-left:15px;color:#848484;"></textarea>
+										<div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+	        </div>
+	  
+    </div>
+  </div> </div>
+                                    
+                                    
+
+
+
+                                    <center><button onclick="writedata()" type="button" class="btn btn-warning" style="padding: 1% 5% 1% 5%;margin-top:2rem;margin-bottom: 10%">ADD EVENT</button></center>
+
+
+
+                                    </section>
+									
+									
+                               <center>      <section id="listtour">
+                                        <a name="targetname1"></a><div class="container-fluid">
+                                           <center> <div class="row">
+                                                <div class="feature col-lg-7">
+                                                    <p style="font-size: 2rem;padding-left: 3%;padding-top: 3%;color: black;font-weight: bold">TOURNAMENT LIST</p></div></div></center>
+                                            <div class="feature col-lg-7"></div></div>
+                                         <div class="cd-tabs cd-tabs--vertical max-width-md margin-top-xl margin-bottom-lg js-cd-tabs" style="width:100%">
+                                            <nav class="cd-tabs__navigation" >
+                                            <center>    <ul class="cd-tabs__list">
+                                                    <li style="margin-right: 1.5rem;margin-left: .5rem;">
+                                                        <a href="#tab-inbox" class="cd-tabs__item cd-tabs__item--selected">
+                                                            <span style="font-size: 1.1rem;"> MORNING </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li style="margin-right: 1.5rem;margin-left: .5rem;">
+                                                        <a href="#tab-new" class="cd-tabs__item" >
+                                                            <span style="font-size: 1.1rem;"> AFTERNOON </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li style="margin-right: 1.5rem;margin-left: .5rem;">
+                                                        <a href="#tab-gallery" class="cd-tabs__item">
+                                                            <span style="font-size: 1.1rem;"> NIGHT </span>
+                                                        </a>
+                                                    </li>
+                                                    <li style="margin-right: 1.5rem;margin-left: .5rem;">
+                                                        <a href="#tab-store" class="cd-tabs__item">
+                                                            <span style="font-size: 1.1rem;"> UPCOMING</span>
+                                                        </a>
+                                                    </li>
+
+
+                                                </ul> 
+												
+												<!-- cd-tabs__list -->
+                                            </nav>
+
+                                            <ul class="cd-tabs__panels">
+                                                <li id="tab-inbox" class="cd-tabs__panel cd-tabs__panel--selected text-component">
+                                                    <div id="qwe" style="color: white">
+
+                                                    </div> 
+                                                </li>
+
+                                                <li id="tab-new" class="cd-tabs__panel text-component">
+                                                    <div id="qwf" style="color: white">
+
+                                                    </div>
+                                                </li>
+
+                                                <li id="tab-gallery" class="cd-tabs__panel text-component">
+                                                    <div id="qwg" style="color: white">
+
+                                                    </div>
+                                                </li>
+                                                <li id="tab-store" class="cd-tabs__panel text-component">
+                                                    <div id="qwg1" style="color: white">
+
+                                                    </div>
+                                                </li>
+
+
+                                            </ul> <!-- cd-tabs__panels -->
+                                        </div>
+                                        <!--                            <nav>
+                                                                        <div style="border: 0; 
+                                                                             border-top-left-radius: 0; 
+                                                                             border-top-right-radius: 0;background-color: black;" class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                                            <a style="border: 0; 
+                                                                               border-top-left-radius: 0; 
+                                                                               border-top-right-radius: 0;font-weight:bold;font-size: 2rem;background-color: black;text-decoration: none;color: goldenrod;" class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">MORNING</a>
+                                                                            <a style="border: 0; 
+                                                                               border-top-left-radius: 0; 
+                                                                               border-top-right-radius: 0;font-weight:bold;font-size: 2rem;background-color: black;text-decoration: none;color: goldenrod;" class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">AFTERNOON</a>
+                                                                            <a style="border: 0; 
+                                                                               border-top-left-radius: 0; 
+                                                                               border-top-right-radius: 0;font-weight:bold;font-size: 2rem;background-color: black;text-decoration: none;color: goldenrod;" class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">NIGHT</a>
+                                                                        </div>
+                                                                    </nav>-->
+                                        <!--                            <div  class="tab-content" id="nav-tabContent">
+                                                                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"><div class="container-fluid">
+                                                                        <div id="qwe" style="color: white">
+                                                                                    
+                                                                                </div>
+                                                                            <div class="container-fluid">
+                                                                        <div class="row">
+                                                                            <div class="feature col-lg-4">
+                                                                                <pre id="qwe" style="color: white"></pre>  
+                                                                                
+                                                                            </div>
+                                                                            <div  class="feature col-lg-4" >
+                                                                                 <pre id="poi" style="color: white"></pre>
+                                                                                
+                                                                            </div>
+                                                                            <div  class="feature col-lg-4">
+                                                                                <pre id="poiu" style="color: white"></pre> 
+                                                                                
+                                                                            </div>
+                                                                                
+                                                                        </div></div>
+                                                                            </div></div>
+                                        
+                                                                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"> <div class="container-fluid">
+                                                                                <div id="qwf" style="color: white">
+                                                                                    
+                                                                                </div></div></div>
+                                                                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"><div class="container-fluid"><div id="qwg" style="color: white">
+                                                                                    </div>
+                                                                                </div></div>
+                                                                    </div>-->
+
+                                    </section></center>
+
+                                    <section id="adminpanel6"  >
+                                        <a name="targetnamenew"></a>
+					    
+					    
+<div class="container">
+   <div class="title" style="padding-top:2rem;">UPDATE EVENT</div>
+    <div class="content" >
+      
+        <div class="user-details">
+		 <div class="input-box">
+		<label for="validationCustom03">EVENT SLOT TIMING</label>
+                                        <div class="input-group mb-3" >
+                                            <select class="custom-select" id="inputGroupSelect029" style="">
+                                                <option selected>Choose a time</option>
+                                                <option value="morning">MORNING</option>
+                                                <option value="afternoon">AFTERNOON</option>
+                                                <option value="night">NIGHT</option>
+                                                <option value="upcoming">UPCOMING</option>
+                                            </select>
+
+                                        </div>
+		</div>
+		
+		<div class="input-box">
+		<label for="validationCustom03" class="details">EVENT BANNER</label>
+                                        <textarea type="text" class="form-control" id="vali9" placeholder="event description" required style="width:100%;height:3rem;border-radius:5px;border:1px solid #ccc;border-bottom-width: 2px;font-size:16px;padding-left:15px;color:#848484;padding-top:0.5rem;"></textarea>
+										<div class="invalid-feedback">
+                                             Please provide a valid phone no
+                                        </div>
+		 </div>
+		
+		<div class="input-box">
+		<label for="validationCustom02" class="details" style="">EVENT PLACE</label>
+                                        <input type="text" class="form-control" id="validationCustom029" placeholder="this event organised by" value="" required style="">
+										<div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+		
+		 </div>
+		 
+		 <div class="input-box">
+		 <label for="validationCustom02">EVENT ORGANIZER</label>
+                                        <input type="text" class="form-control" id="validationCustom0219" placeholder="this event organised by" value="" required style="">
+										<div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+		 
+		  </div>
+		  
+		  <div class="input-box">
+		  <label for="validationCustom03" style="">REGISTRATION STATUS</label>
+                                        <div class="input-group mb-3" >
+                                            <select class="custom-select" id="inputGroupSelect02789" style="width:100%;height:3rem;border-radius:5px;border:1px solid #ccc;border-bottom-width: 2px;font-size:16px;padding-left:15px;color:#848484;padding-top:-0.6rem;">
+                                                <option selected>choose..</option>
+                                                <option value="open">open</option>
+                                                <option value="closed">closed</option>
+
+                                            </select>
+
+                                        </div>
+										<div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+		  </div>
+		  
+		 <div class="input-box"> </div>
+		 <div class="title" style="margin-top:2rem;">ADD MORE DETAILS</div>
+		 
+		  <div class="input-box"> </div>
+		  
+            <div class="input-box"> 
+		 
+					<label for="validationCustom03ab">PRIZE MONEY</label>
+                                        <textarea type="text" class="form-control" id="valiab7" placeholder="1st prize
+2nd prize
+3rd prize
+specification" required style="width:100%;border-radius:5px;border:1px solid #ccc;border-bottom-width: 2px;font-size:16px;padding-left:15px;color:#848484;height:7rem;"></textarea>
+          
+		  <div class="invalid-feedback">
+                                            Please provide a valid phone no
+                                        </div>
+		  
+		  </div>
+		  
+		  <div class="input-box"> 
+		  <label for="validationCustom02a">TIME ZONE</label>
+                                        <input type="text" class="form-control" id="validationCustom021ab7" placeholder="define the time zone" value="Asia/Kolkata (UTC+05:30)" required style="width:100%;color:#848484;">
+										<div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+		  </div>
+		  
+		    <div class="input-box">
+			<label for="validationCustom02" >ENTRY FEE</label>
+                                        <input  type="text" class="form-control" id="validationCustom021abc7" placeholder="enter the amount" value="" required style="width:100%;">
+										<div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+			</div>
+      
+	          <div class="input-box">
+	         <label for="validationCustom02">PAYMENT URL(CASHFREE)</label>
+                                        <input  type="text" class="form-control" id="validationCustom021abctn81" placeholder="enter url" value="" required style="width:100%;">
+										<div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+	          </div>
+			  
+			  
+			  <div class="input-box">
+			<label for="validationCustom02">TELEGRAM URL</label>
+                                        <input  type="text" class="form-control" id="validationCustom021abctnn1" placeholder="enter the url" value="" required style="width:100%;">
+										<div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+			</div>
+			
+			<div class="input-box">
+			<label for="validationCustom02" >EXCEL SHEET PIN</label>
+                                        <input type="text" class="form-control" id="validationCustom021abcl00asd1" placeholder="" value="" required style="width:100%;">
+										<div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+			</div>
+			
+			<div class="input-box">
+			<label for="validationCustom02" >DISCORD URL</label>
+                                        <input type="text" class="form-control" id="validationCustom021abcl001" placeholder=" enter the url" value="" required style="width:100%;">
+										<div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+			</div>
+			
+			<div class="input-box">
+			<label for="validationCustom02">WHATSAPP URL</label>
+                                        <input type="text" class="form-control" id="validationCustom021abcl7" placeholder=" enter the url" value="" required style="width:100%;">
+										<div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+	        </div>
+			
+			<h4 style="color: black;margin-top:3rem;font-size: 25px;font-weight: 500;position: relative;">DATE</h4>
+			
+			<div class="input-box">  </div>
+			
+			<div class="input-box">
+			
+
+                                        <label for="validationCustom02">FROM:</label>
+                                        <input type="text" class="form-control" id="validationCustom021abck7" placeholder="DD/month/year" value="" required style="width:100%;">
+										<div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+	        </div>
+			
+			
+			
+			<div class="input-box">
+			<label for="validationCustom02">TO</label>
+                                        <input type="text" class="form-control" id="validationCustom021abct7" placeholder="DD/month/year" value="" required style="width:100%;">
+										<div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+	        </div>
+			
+			<div class="input-box">
+			<label for="validationCustom03">GAME STRUCTURE</label>
+                                        <textarea type="text" class="form-control" id="validationCustom021abcty61" placeholder="event description" required style="width:100%;height:4rem;border-radius:5px;border:1px solid #ccc;border-bottom-width: 2px;font-size:16px;padding-left:15px;color:#848484;"></textarea>
+										<div class="invalid-feedback">
+                                            Please provide a valid phone no
+                                        </div>
+	        </div>
+	  
+    </div>
+  </div>    </div>
+                                        
+                                  <div id="mkl"></div>
+                                        <center><button onclick="updatedata(this.id)" id="wowo" type="button" class="btn btn-warning" style="padding: 1% 5% 1% 5%;margin-top: 0%;margin-bottom: 5%">UPDATE EVENT</button></center>
+
+
+                                    </section>
+
+
+
+                                    <!-- <section>  <div class="container-fluid">
+                                        <label for="validationCustom02">PROMOCODE</label>
+                                        <input type="text" class="form-control" id="validationCustom021abct7098" placeholder="ENTER PROMO"  required style="width:19rem;">
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                        
+                                        <button onclick="showdatapromo()" id="wowo9888" type="button" class="btn btn-warning" style="padding: 1% 5% 1% 5%;margin-top: 0%;margin-bottom: 5%">FIND</button>
+                                    <div id="something1"></div></div>
+                                    </section> -->
+
+
+
+                                                   <section id="contact">
+                                        <a name="targetname1"></a>
+                                        <div>
+                                            <div class="bottom">
+                                                <center>
+                                                    <div class="row-footer" >
+                                                        <div class="feature col-lg-4" >
+                            <p class="h">CUSTOMER SERVICE</p><br>
+                            <a  href="terms2.html"  class="terms">TERMS OF SERVICE </a></li><br>
+                                                        <a  href="privacy2.html" class="terms">PRIVACY POLICY</a></li>
+                                                        <br>
+                                                        <a  href="service2.html" class="terms">SERVICE LEVEL AGREEMENT</a> </li><br>
+                                                        <a  href="https://campus-ambassador-program.web.app/" class="terms">CAMPUS AMBASSADOR</a> </li>
+                                                      <br>  <a  href="#" class="terms">PARTNER WITH US</a> </li>
+                            
+                            
+                                                        </div>
+                                                        <div class="feature col-lg-4">
+                                                            <img  src="3.2.png" alt="" class="footerlogo">
+                                                            <p class="h">Partnership Inquiry:<a href="mailto:enquiry@myknot.live" style="text-decoration: none ;color:#17a2b8;">Enquiry@myknot.live</a></p><br>
+                                          
+                            
+                            
+                                                        </div>
+                                                        <div class="feature col-lg-4 soc-icons" style="padding-top:1rem;">
+                                                         <a  href="https://www.instagram.com/myknot_gaming/?r=nametag" target="_blank">    <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" class="image-hover" style="display: inline;height:40px;width:40px;"></a>
+                                                          <a  href="https://www.facebook.com/myknotgaming/" target="_blank">   <img src="https://img.icons8.com/fluent/48/000000/facebook-new.png" class="image-hover" style="display: inline;height:40px;width:40px;"></a> 
+                                                         <a  href="https://t.me/myknot_Gaming_Event" target="_blank">       <img src="https://img.icons8.com/fluent/48/000000/telegram-app.png" class="image-hover" style="display: inline;height:40px;width:40px;"></a>
+                                                        <a   href="#" target="_blank">    <img src="https://img.icons8.com/fluent/48/000000/discord-new-logo.png" class="image-hover" style="display: inline;height:40px;width:40px;"></a> 														 
+                                                     </div></div> </center> <center>
+                                                        <div>
+                                                    <p class="g">COPYRIGHT &copy;2019 MYKNOT CORPORATION.<br> ALL RIGHTS RESERVED.<br>
+                                                        MYKNOT's BATTLE ROYALE REGISTERED TRADEMARKS, TRADEMARKS OR SERVICES MARKS OF MYKNOT CORPORATION</p><br><hl>
+                                                        <!-- <p class="h">Partnership Inquiry:&copy;<a href="mailto:enquiry@myknot.live" style="text-decoration: none ;">Enquiry@myknot.live</a></p><br> -->
+                                                    </div>
+                                                </center>
+                                                        
+                                                     
+                                                       
+                            
+                                                        </div>
+                                                        </div>
+                                                        </section>
+              
+                                                        
+                                                        <style>
+                                                            .navbar-brand {
+                                                                  display: inline-block;
+                                                                  padding-top: .0rem; 
+                                                                  padding-bottom: .0rem; 
+                                                                  margin-right: 1rem;
+                                                                  font-size: 1.25rem;
+                                                                  line-height: inherit;
+                                                                  white-space: nowrap;
+                                                              }
+                                                          .event-name{
+                                                              font-family: 'Cabin', sans-serif;
+                                                          }
+                                                          .row-footer{
+                                                            display: flex;
+                                                            -ms-flex-wrap: wrap;
+                                                            flex-wrap: wrap;
+                                                            margin-right: 0px;
+                                                            margin-left: 0px;
+                                                          }
+                                                            .cd-tabs__item {
+                                                                            position: relative;
+                                                                            display: -ms-flexbox;
+                                                                            display: flex;
+                                                                            -ms-flex-direction: column;
+                                                                            flex-direction: column;
+                                                                            -ms-flex-pack: center;
+                                                                            justify-content: center;
+                                                                            -ms-flex-align: center;
+                                                                            align-items: center;
+                                                                            height: 60px;
+                                                                            width: 100%;
+                                                                            font-size: 0.76388em;
+                                                                            font-size: calc(var(--text-xs)*1.1);
+                                                                            font-weight: 700;
+                                                                            color: hsl(54, 8%, 75%);
+                                                                            color: var(--cd-color-3);
+                                                                            text-decoration: none;
+                                                                        }
+                                                        </style>
+                                                        
+                                                        <script src="assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+                                                        <script src="assets/js/main.js"></script>
+                                                        <script src="admincod.js"></script>
+
+
+                                                        </body>
+                                                        </html>

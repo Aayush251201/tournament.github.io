@@ -1,0 +1,363 @@
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14 May, 2020, 4:44:35 AM
+    Author     : asifu
+*/
+.hide{display: none;}
+.rty{text-align: center;
+margin-bottom: 10px;
+font-weight:lighter
+}
+.po:hover{opacity: .6;}
+.rt{text-align: center;
+}
+
+h5{
+  font-weight: bold;
+  color: black;
+}
+
+.btn-outline-warning{text-align: center}
+.why{color: lightslategray;font-weight: 200}
+hl{color: white}
+#title{background-color:black;text-align: center;}
+.maintheme{width: 100%;}
+
+.slash{font-size:1.2rem;}
+.login{position: relative;}
+.btn-outline-light{margin-left:1rem;margin-bottom: 1rem;margin-right: 1rem;}
+
+
+
+
+.nav-link{
+	margin-top:-0.25rem;
+	margin-right:.25rem ;
+	margin-left:.25rem;
+	margin-bottom:0rem;
+	font-weight:bold;
+	font-size: 1.3rem;
+	
+}
+
+.nav-link:hover{background-color:graytext;border-radius:5px;}
+
+
+.containerBox {
+    position: relative;
+    display: inline-block;
+}
+
+.text-box {
+    position: absolute;    
+    height: 100%;
+    text-align: left;    padding-left: 3%;
+    width: 100%;
+}
+
+.text-box:before {
+   content: '';
+   display: inline-block;
+   height: 100%;
+   vertical-align: middle;
+}
+p {
+   display: inline-block;
+   /*or whatever you want*/
+   color: #FFF;   
+   font-family: 'Oswald', sans-serif;
+}
+abc {
+   display: inline-block;
+    /*or whatever you want*/
+   color: gray;
+   font-family: 'Oswald', sans-serif;
+   
+   
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.terms{text-decoration: none;color: white;font-size: .9rem;
+  font-family: 'Fira Sans', sans-serif;
+}
+  .terms:hover{text-decoration: none;color: gray;}
+.dash{color: gray}
+
+
+
+.g{font-family: 'Comic Neue', cursive;
+font-family: 'Lexend Giga', sans-serif;color: white;font-size: .6rem;}
+.h{font-family: 'Fira Sans', sans-serif;
+  color: goldenrod;
+  font-weight: bolder;
+  margin: 0;
+}
+#contact{background-color: black;padding: 1% 5%;}
+.l:hover{opacity: 0.3;}
+.i:hover{opacity: .3;}
+.j:hover{opacity: .3;}
+.k:hover{opacity: .3;}
+.m:hover{opacity: .3;}
+
+.footerlogo{ height: 80px;margin-top:1%}
+
+#listtour{background-color: white;}
+
+
+.registration_statusclass{text-align: left;color: green;margin-left: auto;margin-right: auto;margin-bottom: 0rem;}
+.registration_statusclass1{text-align: left;color: red;margin-left: auto;margin-right: auto;margin-bottom: 0rem;}
+.eventplaceclass{color:blue}
+.organizerclass{color: gray;font-size: .7rem;
+margin-top: 10px;}
+.hhh:hover{color: red}
+hr{color: white}
+h2{color: black}
+
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .avatar {
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+
+  .cd-tabs__panel {
+      margin: 0px;
+  }
+
+  @media screen and (max-width:380px){
+    .cd-tabs__panel {
+        margin: -8px;
+    }
+  }
+  @media screen and (max-width:330px){
+    .cd-tabs__panel {
+        margin: -15px;
+    }
+  }
+
+
+  .row-flex{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      box-shadow: 0px 0px 2px black;
+      padding: 0.5rem;
+      margin-top: 1.5rem;
+      border-radius: 1em;
+
+  }
+  .row-flex:hover{
+
+    background-color: #dddddd; 
+   
+}
+.event-heading{
+    font-family: 'Cabin', sans-serif;
+    display: block;
+    font-weight: bold;
+}
+  .event-creator{
+      display: block;
+      font-weight: 500;
+  }
+
+  @media screen and (max-width:992px){
+    .event-creator{
+        display: block;
+    }
+  }
+  @media screen and (max-width:770px){
+    .row-flex{
+      display: block;
+      justify-content: center;
+      box-shadow: 0px 0px 2px black;
+      padding: 0.5rem;
+      margin-top: 1rem;
+      text-align: center!important;
+    }
+
+}
+.logo{
+    width: 8rem;
+    height: 4rem;
+    margin-left: 0%;
+}
+    .first-div{
+        position: absolute;
+    }
+    .second-div{
+        position: relative;
+        top:60px
+    }
+    .event-creator{
+        display: block;
+        font-family: 'Cabin', sans-serif;
+    }
+  
+  .online-status{
+      margin-left: 0rem;
+      color: rgb(6, 117, 6);
+      display: block;
+      font-family: 'Cabin', sans-serif;
+  }
+
+  .event-anchor{
+    text-decoration: none;  
+
+           
+}
+.event-anchor:hover{
+    text-decoration: none;         
+}
+.Registration-open{
+    color: rgb(6, 117, 6);
+    display: block;
+    font-family: 'Cabin', sans-serif;
+}
+
+
+.btn-outline-light-download{
+	
+    margin-left: 0rem; 
+    margin-bottom: 0rem;
+    margin-right: 0rem; 
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+.btn-download {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid #f8f9fa;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+
+.btn-download:hover{
+    background-color: white;
+    color: black;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+@media only screen and (max-width: 380px){
+	
+    .btn-download {
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-color: transparent;
+        border: 1px solid #f8f9fa;
+        padding: .375rem .75rem;
+        font-size: 0.7rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+    }
+}
+
+@media only screen and (max-width: 325px){
+	
+    .btn-download {
+		
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-color: transparent;
+        border: 1px solid #f8f9fa;
+        padding: .375rem .75rem;
+        font-size: 0.4rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+    }
+}
+
+@media screen and (max-width: 550px){
+
+       .navbar-nav .nav-link {
+             padding-right: 40px;
+             padding-left: 40px;
+             margin-bottom: 10px;
+             margin-top: 8px;
+       }
+}

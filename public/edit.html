@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TOURNAMENT</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" href="1234.ico" style="width:.5rem;height: .5rem;">
+        <link rel="stylesheet" href="edit.css">
+
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+        <!-- Bootstrap CSS -->
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!--fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300&display=swap" rel="stylesheet">
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+         <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+       
+       
+
+
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-database.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167292050-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-167292050-2');
+</script>
+<!-- Analytics Tag Ends Here -->
+
+</head>
+    <body>
+
+
+
+        <section id="title">
+
+            <nav class="navbar  navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="main.html"><img  class="logo" src='3.2.png' ></a>
+				<a class="nav-link-download" target="_blank" href="https://drive.google.com/drive/u/0/folders/1M0AMw0miQ7cjKwesSwuKCGR9CrCMHK_9" style="color: white"><button type="button" class="btn-download btn-outline-light-download"><span>DOWNLOAD APP</span></button></a>
+                <button style="border-color: white" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                       
+
+                        <li  class="nav-item"><a class="nav-link  navbar-right-link" style="color: white">SUPPORT</a></li>
+                        <li class="nav-item">
+                            <!-- <button type="button" id="btnlog" class="btn btn-outline-light"><span>LOG OUT</span></button> -->
+                           
+                              
+                              <!-- Use any element to open the sidenav -->
+                              <a class="nav-link  navbar-right-link" style="color: white "> <span onclick="openNav()" style="color: white;">PROFILE</span></a>
+							  
+                              
+                              <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+                              <!-- <div id="main">
+                                ...
+                              </div> -->
+                        </li>
+
+
+                    </ul>
+                </div>
+            </nav>
+        </section>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#" style="text-decoration: none;"> <img src="123.png" alt="Avatar" class="avatar"></a>
+            <a href="#"  style="text-decoration: none;" id="lol12"></a>
+
+            <a href="#"  style="text-decoration: none;font-weight: none;font-size: 16px;"><div id="useridmail"></div></a>
+            <a href="edit.html"  style="text-decoration: none;">EDIT PROFILE</a>
+            <a href="#"  style="text-decoration: none;">ORDERS</a>
+            <a href="#"  style="text-decoration: none;">
+                <button type="button" id="btnlog" class="btn btn-outline-light" style="margin-left: 0;"><span>LOG OUT</span></button>
+
+            </a>
+          
+          </div>
+          <section class="uppersection">
+            <div id="mainsection1">   <h2  class="text-center heading"style="color: white;margin-bottom:2rem; ">COMPLETE YOUR PROFILE</h2>
+                <div class="container-fluid col-lg-8 contn"> 
+                            
+                    <div class="row">
+
+                        <div class="feature col-lg-6" >
+                            <div >
+                <label  class="label-box"for="validationCustom02">FIRST NAME</label>
+                <input type="text" class="form-control" id="oijmn" placeholder="First Name" value="" required >
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <label  class="label-box"for="validationCustom02">LAST NAME</label>
+                <input type="text" class="form-control" id="kliol" placeholder="Last Name" value="" required >
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+
+                <label class="label-box" for="validationCustom02">WHATSAPP NUMBER</label>
+                <input type="text" class="form-control" id="kliol1" placeholder="Phone No" value="" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                </div></div>
+                
+                <div class="feature col-lg-6">
+                    <div >
+
+                    <label class="label-box" for="validationCustom02">USERNAME</label>
+                    <input type="text" class="form-control" id="kliol2" placeholder="Enter Username" value="" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <label  class="label-box"for="validationCustom02">AGE</label>
+                    <input type="date" class="form-control" id="kliol3" placeholder="" value="" required >
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                
+                
+                </div></div></div>
+                <div class="row">
+
+                    <div class="feature col-lg-12" >
+                                    <center><button onclick="writedatayou()" type="submit" class="btn btn-warning" style="margin-top:2rem;margin-bottom: 2rem;">UPDATE PROFILE</button></center>
+<div id="pop21" style="color: red;"></div>
+                </div></div></div>
+
+            </div>
+        </section>
+
+
+        <section id="contact">
+            <a name="targetname1"></a>
+            <div>
+                <div class="bottom">
+                    <center>
+                        <div class="row" >
+                            <div class="feature col-lg-4" style="">
+<p class="h">CUSTOMER SERVICE</p>
+<a  href="terms2.html"  class="terms">TERMS OF SERVICE </a></li><br>
+                            <a  href="privacy2.html" class="terms">PRIVACY POLICY</a></li>
+                            <br>
+                            <a  href="service2.html" class="terms">SERVICE LEVEL AGREEMENT</a> </li><br>
+                            <a  href="https://campus-ambassador-program.web.app/" class="terms">CAMPUS AMBASSADOR</a> </li>
+                          <br>  <a  href="#" class="terms">PARTNER WITH US</a> </li>
+
+
+                            </div>
+                            <div class="feature col-lg-4">
+                                <img  src="3.2.png" alt="" class="footerlogo">
+                                <p class="h">Partnership Inquiry:<a href="mailto:enquiry@myknot.live" style="text-decoration: none ;">Enquiry@myknot.live</a></p><br>
+              
+
+
+                            </div>
+                            <div class="feature col-lg-4" style="padding-top: 3%;">
+                           <a  href="https://www.instagram.com/myknot_gaming/?r=nametag" target="_blank">    <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" class="image-hover" style="display: inline;height:40px;width:40px;"></a>
+                                                          <a  href="https://www.facebook.com/myknotgaming/" target="_blank">   <img src="https://img.icons8.com/fluent/48/000000/facebook-new.png" class="image-hover" style="display: inline;height:40px;width:40px;"></a> 
+                                                         <a  href="https://t.me/myknot_Gaming_Event" target="_blank">       <img src="https://img.icons8.com/fluent/48/000000/telegram-app.png" class="image-hover" style="display: inline;height:40px;width:40px;"></a>
+
+                                                           <a   href="#" target="_blank">    <img src="https://img.icons8.com/fluent/48/000000/discord-new-logo.png" class="image-hover" style="display: inline;height:40px;width:40px;"></a> 
+                            </div></div> </center> <center>
+                            <div>
+                        <p class="g">COPYRIGHT &copy;2019 MYKNOT CORPORATION.<br> ALL RIGHTS RESERVED.<br>
+                            MYKNOT's BATTLE ROYALE REGISTERED TRADEMARKS, TRADEMARKS OR SERVICES MARKS OF MYKNOT CORPORATION</p><br><hl>
+                            <!-- <p class="h">Partnership Inquiry:&copy;<a href="mailto:enquiry@myknot.live" style="text-decoration: none ;">Enquiry@myknot.live</a></p><br> -->
+                        </div>
+                    </center>
+                            
+                         
+                           
+
+                            </div>
+                            </div>
+                            </section>
+
+                            <style>
+                                body{
+                                    background-color: black;
+                                    }
+
+                                    .navbar-brand {
+                                display: inline-block;
+                                 padding-top: .0rem; 
+                                 padding-bottom: .0rem; 
+                                margin-right: 1rem;
+                                font-size: 1.25rem;
+                                line-height: inherit;
+                                white-space: nowrap;
+                            }      
+
+                                .row {
+                                    display: -ms-flexbox;
+                                    display: flex;
+                                    -ms-flex-wrap: wrap;
+                                    flex-wrap: wrap;
+                                    margin-right: 0px; 
+                                     margin-left: 0px; 
+                                }
+
+                                    .col-lg-8{
+                                        position: relative;
+                                        width: 90%;
+                                        padding-right: 15px;
+                                        padding-left: 15px;
+                                    }
+
+                                    @media screen and (max-width: 750x) {
+                                        .col-lg-8{
+                                        position: relative;
+                                        width: 90%;
+                                        padding-right: 0px;
+                                        padding-left: 0px;
+                                    }
+                                    }
+                            </style>
+
+
+
+
+
+
+
+
+                            <script src="edit.js"></script>
+                            </body>
+                            </html>

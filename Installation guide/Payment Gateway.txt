@@ -1,0 +1,18 @@
+###Test Mode###
+
+Link:- https://test.cashfree.com/billpay/checkout/post/submit
+
+AppId:- 16659e73fe0b71d24294caa1695661
+
+Secret Code:- 348a00ab3ee5b662f0122897e3c7bfbf4082ddf2
+
+
+
+###Production Mode###
+
+Link:-   https://www.cashfree.com/checkout/post/submit
+
+AppId:-  5302711808b9af9641345da8b72035
+
+Secret Code:-  ae5d4c5252ede9e23e8edd908fc376b3af7bb1a8
+

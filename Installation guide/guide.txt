@@ -1,0 +1,15 @@
+
+
+
+
+1. Production Mode
+
+for production mode change only two file inside public folder
+1. index-online.php to index.php and previous index.php to index-local.php
+2. return-online.php to return.php and previous return.php to return-local.php
+
+
+2. Localhost
+
+Vice-Versa
+
